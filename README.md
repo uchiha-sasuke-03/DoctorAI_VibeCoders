@@ -1,5 +1,9 @@
 # 🩺 aidAR — AI-Powered First-Aid Assistant
 
+<p align="center">
+  <img src="landing-next/public/github_banner.png" alt="aidAR Cinematic Banner" width="100%">
+</p>
+
 ## Three Steps to Immediate Help
 
 ### ① Describe Your Situation

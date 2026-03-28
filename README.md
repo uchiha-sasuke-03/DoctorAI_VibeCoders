@@ -1,6 +1,15 @@
 # 🩺 aidAR — AI-Powered First-Aid Assistant
 
-> An interactive, Awwwards-style medical platform featuring a 3D anatomy viewer, AI-powered diagnostic chatbot, and real-time AR narration — built with Next.js 15, React Three Fiber, Framer Motion, and GSAP.
+## Three Steps to Immediate Help
+
+### ① Describe Your Situation
+Type or speak your symptoms in plain language. aidAR understands context, severity, and urgency from natural conversation.
+
+### ② AI Analyzes & Responds
+Our AI engine cross-references your symptoms against thousands of conditions and provides a structured, prioritized assessment.
+
+### ③ Follow Visual Guidance
+The 3D viewer and AR narrator walk you through procedures step-by-step with synchronized animations and voice narration.
 
 ---
 

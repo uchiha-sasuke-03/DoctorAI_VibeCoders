@@ -66,6 +66,14 @@ The 3D viewer and AR narrator walk you through procedures step-by-step with sync
 - **Ollama** installed and running ([ollama.com](https://ollama.com))
 - **MedLlama2** model pulled: `ollama pull medllama2`
 
+### 📱 Android APK Installation
+To run aidAR directly on your Android phone natively:
+1. Download the `aidAR.apk` file to your Android device.
+2. Open your device **Settings** > **Apps** > **Special app access** > **Install unknown apps** (or enable this prompt when downloading via Chrome).
+3. Toggle on "Allow from this source".
+4. Locate the downloaded `aidAR.apk` file in your File Manager or Downloads folder.
+5. Tap the file and select **Install** to deploy it to your home screen!
+
 ### Installation
 
 ```bash

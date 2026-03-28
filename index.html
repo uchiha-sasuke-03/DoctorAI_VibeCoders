@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>aidAR — Your AI-Powered First-Aid Assistant</title>
+  <meta name="description"
+    content="aidAR is an AI-powered first-aid assistant featuring 3D anatomy visualization, a diagnostic AI chatbot, and AR contextual guidance for emergency care." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+
+<body class="landing-page">
+  <!-- ========== TOP NAV ========== -->
+  <header id="top-nav">
+    <div class="nav-inner">
+      <a href="/" class="logo" style="text-decoration:none;">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2L12 22M2 12L22 12" stroke-linecap="round" />
+            <circle cx="12" cy="12" r="10" />
+          </svg>
+        </div>
+        <span class="logo-text">aid<span class="logo-ai">AR</span></span>
+      </a>
+      <nav class="nav-links">
+        <a href="/" class="nav-tab active">Home</a>
+        <a href="/viewer.html" class="nav-tab">3D Viewer</a>
+        <a href="/doctor.html" class="nav-tab">AI Doctor</a>
+      </nav>
+      <div class="nav-status">
+        <span class="status-dot"></span>
+        <span>System Active</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== HERO SECTION ========== -->
+  <main class="landing-main">
+    <section class="hero">
+      <div class="hero-glow"></div>
+      <div class="hero-content">
+        <div class="hero-badge">⚕️ AI-Powered First Aid</div>
+        <h1 class="hero-title">
+          Your Personal<br />
+          <span class="hero-gradient">AI Medical Assistant</span>
+        </h1>
+        <p class="hero-desc">
+          aidAR combines 3D anatomy visualization, an intelligent diagnostic chatbot, and AR-guided first-aid procedures
+          — all in one platform. Get instant symptom assessments, first-aid instructions, and OTC medicine suggestions.
+        </p>
+        <div class="hero-actions">
+          <a href="/doctor.html" class="hero-btn hero-btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+            </svg>
+            AI Doctor
+          </a>
+          <a href="/viewer.html" class="hero-btn hero-btn-secondary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+              <circle cx="12" cy="12" r="3" />
+            </svg>
+            3D Viewer
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FEATURES ========== -->
+    <section class="features" id="features">
+      <h2 class="features-heading">What aidAR Offers</h2>
+      <div class="features-grid">
+
+        <a href="/viewer.html" class="feature-card" style="text-decoration:none;">
+          <div class="feature-icon feature-icon-viewer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+              <circle cx="12" cy="12" r="3" />
+            </svg>
+          </div>
+          <h3 class="feature-title">3D First-Aid Viewer</h3>
+          <p class="feature-desc">Interactive 3D anatomy model with real-time CPR and bleeding control demonstrations.
+            Rotate, zoom, and learn step-by-step procedures visually.</p>
+          <span class="feature-link">Open Viewer →</span>
+        </a>
+
+        <a href="/doctor.html" class="feature-card" style="text-decoration:none;">
+          <div class="feature-icon feature-icon-doctor">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+            </svg>
+          </div>
+          <h3 class="feature-title">AI Doctor</h3>
+          <p class="feature-desc">Describe your symptoms and receive AI-powered assessments with severity levels, OTC
+            medicine suggestions, home-care tips, and red-flag warnings.</p>
+          <span class="feature-link">Start Consultation →</span>
+        </a>
+
+        <a href="/viewer.html" class="feature-card" style="text-decoration:none;">
+          <div class="feature-icon feature-icon-narrator">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+            </svg>
+          </div>
+          <h3 class="feature-title">AR Narrator</h3>
+          <p class="feature-desc">Contextual voice assistant that narrates what's happening in the 3D scene in real-time
+            — synchronized with animations and camera movement.</p>
+          <span class="feature-link">View in 3D →</span>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ========== DISCLAIMER ========== -->
+    <section class="landing-disclaimer">
+      <p>⚕️ <strong>Disclaimer:</strong> aidAR is for informational purposes only. It does not provide medical
+        diagnoses. Always consult a qualified healthcare professional for medical advice, diagnosis, or treatment.</p>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="landing-footer">
+      <p>aid<span class="logo-ai">AR</span> &mdash; Built for emergencies. Not a substitute for professional medical
+        care.</p>
+    </footer>
+  </main>
+
+  <script type="module" src="/src/landing.ts"></script>
+</body>
+
+</html>

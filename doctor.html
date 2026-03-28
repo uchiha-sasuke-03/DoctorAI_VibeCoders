@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Doctor — aidAR</title>
+  <meta name="description" content="AI-powered medical assistant. Describe your symptoms and receive personalized first-aid guidance, OTC medicine suggestions, and red-flag detection." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body class="doctor-page">
+  <!-- ========== TOP NAV ========== -->
+  <header id="top-nav">
+    <div class="nav-inner">
+      <a href="/" class="logo" style="text-decoration:none;">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2L12 22M2 12L22 12" stroke-linecap="round"/>
+            <circle cx="12" cy="12" r="10"/>
+          </svg>
+        </div>
+        <span class="logo-text">aid<span class="logo-ai">AR</span></span>
+      </a>
+      <nav class="nav-links">
+        <a href="/" class="nav-tab">Home</a>
+        <a href="/viewer.html" class="nav-tab">3D Viewer</a>
+        <a href="/doctor.html" class="nav-tab active">AI Doctor</a>
+      </nav>
+      <div class="nav-status">
+        <span class="status-dot"></span>
+        <span>AI Doctor Active</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== DOCTOR MAIN ========== -->
+  <main id="doctor-app">
+    <!-- Welcome / Center Area (visible before first message) -->
+    <div id="doctor-welcome">
+      <div class="welcome-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="48" height="48">
+          <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+        </svg>
+      </div>
+      <h1 class="welcome-title">AI Doctor</h1>
+      <p class="welcome-subtitle">Describe your symptoms and I'll help assess them with personalized guidance, medicine suggestions, and red-flag detection.</p>
+
+      <!-- Quick category pills -->
+      <div id="doctor-categories">
+        <button class="category-pill" data-symptom="I have a fever">🌡️ Fever</button>
+        <button class="category-pill" data-symptom="I am experiencing pain">🩹 Pain</button>
+        <button class="category-pill" data-symptom="I have breathing difficulties">🫁 Breathing</button>
+        <button class="category-pill" data-symptom="I have an injury">🩻 Injury</button>
+        <button class="category-pill" data-symptom="I have digestive issues">🤢 Digestive</button>
+        <button class="category-pill" data-symptom="I have a skin rash or irritation">🔴 Skin / Rash</button>
+      </div>
+    </div>
+
+    <!-- Chat conversation area (grows as messages arrive) -->
+    <div id="doctor-conversation" class="hidden">
+      <div id="doctor-messages-area"></div>
+    </div>
+
+    <!-- Centered input bar (always at bottom-center) -->
+    <div id="doctor-input-bar">
+      <div class="input-bar-inner">
+        <input type="text" id="doctor-search" placeholder="Describe your symptoms..." autocomplete="off" />
+        <button id="doctor-search-send" class="search-send-btn" aria-label="Send">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+            <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+          </svg>
+        </button>
+      </div>
+      <p class="input-disclaimer">AI-generated guidance only. Always consult a healthcare professional.</p>
+    </div>
+  </main>
+
+  <script type="module" src="/src/doctor-main.ts"></script>
+</body>
+</html>
